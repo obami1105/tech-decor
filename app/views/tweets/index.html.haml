@@ -2,21 +2,22 @@
 
 .wrapper
   %section.MainVisual
-    .MainVisual__container
-      .row
-        .ContentsBox{style: ""}
-          %figure.inner
-            .Material-placeholder{style: ""}
-              %img.Material-box{src: "/images/pixabay.com/landscape-0001@500-500.jpg", style: ""}/
-        .ContentsBox{style: ""}
-          %figure.inner
-            .Material-placeholder{style: ""}
-              %img.Material-box{src: "/images/pixabay.com/landscape-0002@500-500.jpg", style: ""}/
-        .ContentsBox{style: ""}
-          %figure.inner
-            .Material-placeholder{style: ""}
-              %img.Material-box{src: "/images/pixabay.com/music-0001@500-500.jpg", style: ""}/
-        .ContentsBox
-          %figure.inner
-            .Material-placeholder
-              %img.Material-box{src: "/images/pixabay.com/music-0001@500-500.jpg"}/
+    = image_tag('', class: 'NavImage')
+  %section.MainVisual__contents
+    .row
+      .ContentsBox{style: ""}
+        %figure.inner
+          .Material-placeholder{style: ""}
+            %img.Material-box{src: "/images/pixabay.com/landscape-0001@500-500.jpg", style: ""}/
+      .ContentsBox{style: ""}
+        %figure.inner
+          .Material-placeholder{style: ""}
+            %img.Material-box{src: "/images/pixabay.com/landscape-0002@500-500.jpg", style: ""}/
+      .ContentsBox{style: ""}
+        %figure.inner
+          .Material-placeholder{style: ""}
+            %img.Material-box{src: "/images/pixabay.com/music-0001@500-500.jpg", style: ""}/
+      .ContentsBox
+        %figure.inner
+          .Material-placeholder
+            %img.Material-box{src: "/images/pixabay.com/music-0001@500-500.jpg"}/

@@ -20,17 +20,19 @@
   max-width: 100%;
 }
 
-.ul,li {
+.ul,li { 
   padding: 0;
   margin: 0;
 }
 
 .header{
-  height: 100px;
+  height: 150px;
   background-color: #f0f0f0;
   padding: 10px 0;
   display: flex;
+  background-color: #432c02;
 }
+
 
 .heading{
   width: 100%;
@@ -56,14 +58,18 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
-  display: flex;
   align-items: center;
 }
 
 .Navbar {
-  width: 50%;
-  padding: 20px;
-  align-items: flex-start;
+  width: 90%;
+  border-top: 2px dotted #aaa;
+  border-bottom: 2px dotted #aaa;
+  padding: 10px;
+  margin: 15px;
+  justify-content: center;
+  margin-left: 60px;
+
 }
 
 .NavLists {
@@ -71,7 +77,6 @@
   padding: 0;
   display: flex;
   justify-content: flex-end;
-  
 }
 
 .ul{
