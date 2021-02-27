@@ -30,17 +30,8 @@
         .TopView
           .slide
             = image_tag 'pict/top-view.jpg', alt:'TOP画面', class:"TopImage"
-    .row
-      .col-sm-4
-        .content_image-over
-          = link_to "#" do
-            = image_tag 'pict/top-view.jpg', alt:'TOP画面', class:"TopImage"
-      .col-sm-4
-        .content_image-over
-          = link_to "#" do
-            = image_tag 'pict/top-view.jpg', alt:'TOP画面', class:"TopImage"
-      .col-sm-4
-        .content_image-over
-          = link_to "#" do
-            = image_tag 'pict/top-view.jpg', alt:'TOP画面', class:"TopImage"
-    
+    = render 'layouts/top-column'
+    = render 'layouts/top-column'
+    = render 'layouts/top-column'
+    = render 'layouts/top-column'
+    = render 'layouts/top-column'
