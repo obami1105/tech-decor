@@ -1,23 +1,46 @@
-= render 'layouts/header'
-
-.wrapper
-  %section.MainVisual
-    = image_tag('', class: 'NavImage')
-  %section.MainVisual__contents
+-# header
+#header
+  %h1 Tech Decore
+  #navigation
+    .mainBlock
+      %ul#menu.main
+        %li
+          = link_to "#" do 
+            FLOWERS & DESIGN
+        %li
+          = link_to "#" do 
+            SCHOOL
+        %li
+          = link_to "#" do 
+            NEWS & EVENT
+        %li
+          = link_to "#" do 
+            PRESS & MOVIES
+        %li
+          = link_to "#" do 
+            LOCATIONS
+        %li.last
+          = link_to "#" do 
+            SHOP ONLINE
+-# body
+#main
+  .container
     .row
-      .ContentsBox{style: ""}
-        %figure.inner
-          .Material-placeholder{style: ""}
-            %img.Material-box{src: "/images/pixabay.com/landscape-0001@500-500.jpg", style: ""}/
-      .ContentsBox{style: ""}
-        %figure.inner
-          .Material-placeholder{style: ""}
-            %img.Material-box{src: "/images/pixabay.com/landscape-0002@500-500.jpg", style: ""}/
-      .ContentsBox{style: ""}
-        %figure.inner
-          .Material-placeholder{style: ""}
-            %img.Material-box{src: "/images/pixabay.com/music-0001@500-500.jpg", style: ""}/
-      .ContentsBox
-        %figure.inner
-          .Material-placeholder
-            %img.Material-box{src: "/images/pixabay.com/music-0001@500-500.jpg"}/
+      .col-sm-12 
+        .TopView
+          .slide
+            = image_tag 'pict/top-view.jpg', alt:'TOP画面', class:"TopImage"
+    .row
+      .col-sm-4
+        .content_image-over
+          = link_to "#" do
+            = image_tag 'pict/top-view.jpg', alt:'TOP画面', class:"TopImage"
+      .col-sm-4
+        .content_image-over
+          = link_to "#" do
+            = image_tag 'pict/top-view.jpg', alt:'TOP画面', class:"TopImage"
+      .col-sm-4
+        .content_image-over
+          = link_to "#" do
+            = image_tag 'pict/top-view.jpg', alt:'TOP画面', class:"TopImage"
+    
