@@ -34,7 +34,23 @@
     = render 'layouts/top-column'
     = render 'layouts/top-column'
     = render 'layouts/top-column'
-    = render 'layouts/top-column'
+    -# = render 'layouts/top-column'
+    -# 発表用の記述
+    .row
+      .col-sm-4
+        .content_image-over
+          = link_to "#" do
+            = image_tag 'pict/top-view.jpg', alt:'TOP画面', class:"TopImage"
+      .col-sm-4
+        .content_image-over
+          = link_to "#" do
+            = image_tag 'pict/top-view.jpg', alt:'TOP画面', class:"TopImage"
+      .col-sm-4
+        .content_image-over_test
+          = link_to "" do
+            = image_tag '', alt:'', class:"TopImage"
+            .Test
+              NO-Image
 footter
 #footer
   .footer__contents

@@ -124,6 +124,18 @@ a{
   }
 }
 
+.content_image-over_test{
+  display: flex;
+  height: 100%;
+  background-color: rgb(223, 219, 219);
+  align-items: center;
+  justify-content: center;
+  .Test{
+    color: white!important;
+    font-size: 20px;
+  }
+}
+
 #footer{
-  
+
 }
