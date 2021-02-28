@@ -137,5 +137,42 @@ a{
 }
 
 #footer{
-
+  height: 160px;
+  clear: both;
+  background: #000000;
+  margin: -140px auto 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .footer__contents{
+    width: 50% !important;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
+
+#footer__search{
+  color: #fff;
+  display: flex;
+  label{
+    width: 20% !important;
+    display: block;
+    margin-bottom: 5px;
+    border: 0;
+    margin: 0;
+    cursor: default;
+    align-self: center;
+  }
+  input{
+    display: block;
+    text-indent: 5px;
+    float: left;
+    margin: 0px 10px !important;
+    padding: 6px 0 !important;
+    width: 80% !important;
+    border: 1px solid #999;
+  }
+}
+
+  

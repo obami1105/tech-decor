@@ -50,11 +50,10 @@
           = link_to "" do
             = image_tag '', alt:'', class:"TopImage"
             .Test
-              NO-Image
-footter
+              No-Image
+-# footter
 #footer
   .footer__contents
     #footer__search
-      #footer__search-area 
-        %label{for: "footer__search-area"} Search Box:
-        %input#footer__search-area.SearchBox{name: "Search", placeholder: "Search text", type: "Search"}/
+      %label{for: "footer__search-area"} Search Box：
+      %input#footer__search-area.SearchBox{maxlength: "30",placeholder: "Search text", type: "text"}/
