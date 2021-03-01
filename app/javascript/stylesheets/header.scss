@@ -53,18 +53,18 @@ body{
       letter-spacing: normal;
       float: none;
     }
+    a{
+      display: inline-block;
+      color: #000 !important;
+      font-weight: bold !important;
+      text-decoration: none !important;
+      background: transparent;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
   }
 }
 
-a{
-  display: inline-block;
-  color: #000 !important;
-  font-weight: bold !important;
-  text-decoration: none !important;
-  background: transparent;
-  box-sizing: border-box;
-  cursor: pointer;
-}
 
 
 #main{

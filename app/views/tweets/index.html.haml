@@ -4,24 +4,25 @@
   #navigation
     .mainBlock
       %ul#menu.main
+        -# %li
+        -#   = link_to "#" do 
+        -#     FLOWERS & DESIGN
+        -# %li
+        -#   = link_to "#" do 
+        -#     SCHOOL
+        -# %li
+        -#   = link_to "#" do 
+        -#     NEWS & EVENT
+        -# %li
+        -#   = link_to "#" do 
+        -#     PRESS & MOVIES
         %li
           = link_to "#" do 
-            FLOWERS & DESIGN
-        %li
-          = link_to "#" do 
-            SCHOOL
-        %li
-          = link_to "#" do 
-            NEWS & EVENT
-        %li
-          = link_to "#" do 
-            PRESS & MOVIES
-        %li
-          = link_to "#" do 
-            LOCATIONS
+            Log in
         %li.last
+          -# = link_to 'Create Account', edit_item_path(@item.id), method: :post, class:"Sight-up"
           = link_to "#" do 
-            SHOP ONLINE
+            Create Account
 -# body
 #main
   .container
@@ -51,6 +52,14 @@
             = image_tag '', alt:'', class:"TopImage"
             .Test
               No-Image
+              
+  .contents.row
+    = @tweets.each do |tweet|
+      .content_post{:style => "background-image: url(#{tweet.image});"}
+        %p= tweet.text
+        %span.name
+          = tweet.name
+
 -# footter
 #footer
   .footer__contents
