@@ -53,16 +53,18 @@
             .Test
               No-Image
               
-  .contents.row
+    .contents.row
     = @tweets.each do |tweet|
       .content_post{:style => "background-image: url(#{tweet.image});"}
         %p= tweet.text
         %span.name
           = tweet.name
-          
+
 -# footter
 #footer
   .footer__contents
     #footer__search
       %label{for: "footer__search-area"} Search Box：
       %input#footer__search-area.SearchBox{maxlength: "30",placeholder: "Search text", type: "text"}/
+    %br
+    %p Copyright　Tech Decore 2021.
