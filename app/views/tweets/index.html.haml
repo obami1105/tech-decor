@@ -1,17 +1,4 @@
--# header
-#header
-  %h1 Tech Decore
-  #navigation
-    .mainBlock
-      %ul#menu.main
-        %li
-          = link_to "#" do 
-            Log in
-        %li.last
-          -# = link_to 'Create Account', edit_item_path(@item.id), method: :post, class:"float-right"
-          = link_to "#" do 
-            Create Account
--# body
+= render 'layouts/header'
 #main
   .container
     .row
@@ -47,12 +34,4 @@
         %p= tweet.text
         %span.name
           = tweet.name
-
--# footter
-#footer
-  .footer__contents
-    #footer__search
-      %label{for: "footer__search-area"} Search Box：
-      %input#footer__search-area.SearchBox{maxlength: "30",placeholder: "Search text", type: "text"}/
-    %br
-    %p Copyright　Tech Decore 2021.
+= render 'layouts/footer'

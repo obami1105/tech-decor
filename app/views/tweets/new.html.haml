@@ -1,3 +1,4 @@
+= render 'layouts/header'
 .contents.text-center
   .PostField
     %h3.text-center 投稿する
@@ -7,3 +8,4 @@
       .form-group
         = f.text_area :content, class: 'form-control area', placeholder: 'type a message'
       = f.submit 'SEND', class: 'btn btn-primary btn-lg btn-block'
+      
