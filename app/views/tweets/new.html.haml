@@ -2,10 +2,11 @@
 .contents.text-center
   .PostField
     %h3.text-center 投稿する
-    = form_with model:@tweet, id: '', class: 'new-message', local: true do |f|
+    = form_with model:@tweet, id:'new_tweet', class: 'new-message', local: true do |f|
+      .form-group
+        = f.text_area :name, class: 'form-control area'
       .form-group
         = f.file_field :image, class: 'form-control-file'
       .form-group
-        = f.text_area :content, class: 'form-control area', placeholder: 'type a message'
+        = f.text_area :text, class: 'form-control area', placeholder: 'type a message'
       = f.submit 'SEND', class: 'btn btn-primary btn-lg btn-block'
-      
