@@ -5,6 +5,7 @@
     .mainBlock
       %ul#menu.main
         %li
+          -# = link_to 'Post', tweet_path(@tweet.id), method: :post, class:"float-right"
           = link_to "#" do 
             Post
         %li
