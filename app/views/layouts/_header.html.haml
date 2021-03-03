@@ -6,8 +6,13 @@
       %ul#menu.main
         %li
           = link_to "#" do 
+            Post
+        %li
+          = link_to "#" do 
             Log in
         %li.last
           -# = link_to 'Create Account', edit_item_path(@item.id), method: :post, class:"float-right"
           = link_to "#" do 
             Create Account
+        %li
+          = current_user.name
