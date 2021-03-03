@@ -9,8 +9,10 @@
     .row
       - @tweets.each do |tweet|
         .col-sm-4
-          .content_image-over
+          .content.img-responsive
             =image_tag ("#{tweet.image}")
+        
+
 
       -# = render 'layouts/top-column'
     -# 発表用の記述
