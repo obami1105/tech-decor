@@ -1,1 +1,8 @@
-show
+= render 'layouts/header'
+#main
+  .container
+    .row
+      .col-sm-12 
+        .TopView
+          .slide
+            = image_tag @tweet.image.url
