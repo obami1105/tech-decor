@@ -5,9 +5,6 @@ class TweetsController < ApplicationController
 
   def new
     @tweet = Tweet.new
-    if @tweet.save
-      redirect_to root_path
-    end
   end
 
   def create
