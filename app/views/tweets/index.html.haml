@@ -9,33 +9,8 @@
     .row
       - @tweets.each do |tweet|
         .col-sm-4
-          .content.img-responsive
-            =image_tag ("#{tweet.image}")
-        
-
-
-      -# = render 'layouts/top-column'
-    -# 発表用の記述
-    -# .row
-    -#   .col-sm-4
-    -#     .content_image-over
-    -#       = link_to "#" do
-    -#         = image_tag 'pict/top-view.jpg', alt:'TOP画面', class:"TopImage"
-    -#   .col-sm-4
-    -#     .content_image-over
-    -#       = link_to "#" do
-    -#         = image_tag 'pict/top-view.jpg', alt:'TOP画面', class:"TopImage"
-    -#   .col-sm-4
-    -#     .content_image-over_test
-    -#       = link_to "" do
-    -#         = image_tag '', alt:'', class:"TopImage"
-    -#         .Test
-    -#           No-Image
-              
-    -# .contents.row
-    -# = @tweets.each do |tweet|
-    -#   .content_post{:style => "background-image: url(#{tweet.image});"}
-    -#     %p= tweet.text
-    -#     %span.name
-    -#       = tweet.name
+          = link_to tweet_path(tweet.id), method: :get do
+            %p= tweet.text
+            .content.img-responsive
+              = image_tag ("#{tweet.image}")
 = render 'layouts/footer'
