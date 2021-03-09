@@ -5,4 +5,7 @@
       .col-sm-12 
         .TopView
           .slide
-            = image_tag @tweet.image.url
+            %span= image_tag @tweet.image.url
+            %ul.slide_list
+              %li
+                = link_to '削除', tweet_path(@tweet.id), method: :delete
