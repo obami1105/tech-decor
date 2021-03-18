@@ -10,7 +10,7 @@
       - @tweets.each do |tweet|
         .col-sm-4
           = link_to tweet_path(tweet.id), method: :get do
-            %p= tweet.text
+            %p
             .content.img-responsive
               = image_tag ("#{tweet.image}")
 
