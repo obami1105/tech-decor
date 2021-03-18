@@ -1,0 +1,12 @@
+= render 'layouts/header'
+#main-
+  .container
+    %h3 編集する
+    = form_with model: @tweet, id: 'new_tweet', local: true do |f|
+      .row
+        .col-sm-4
+          = image_tag @tweet.image.url
+        .col-sm-8
+          .body
+            = f.text_area :text, class: "", id: "input-text", rows: "14", placeholder: "text"
+            %button.btn.btn-secondary.btn-lg.btn-block SEND
