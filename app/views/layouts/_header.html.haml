@@ -1,6 +1,8 @@
 -# header
 #header
-  %h1 Tech Decore
+  %h1
+    -# = link_to 'Tech Decore', root_path
+    = link_to image_tag('pict/tittle.png', alt:'tittle', class:"Tittle"), root_path
   #navigation
     .mainBlock
       %ul#menu.main
@@ -9,9 +11,9 @@
         %li
           = link_to "#" do 
             Log out
-        %li.last
-          -# = link_to 'Create Account', edit_item_path(@item.id), method: :post, class:"float-right"
+        %li
           = link_to "#" do 
             Create Account
         %li
-          = current_user.name
+          = link_to edit_user_path(current_user) do
+            = current_user.name
