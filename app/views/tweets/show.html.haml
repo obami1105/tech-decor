@@ -1,8 +1,24 @@
 = render 'layouts/header'
-#main
-  .container
-    .row
-      .col-sm-12 
-        .TopView
-          .slide
-            = image_tag @tweet.image.url
+-# #main
+-#   .container
+-#     .row
+-#       .col-sm-12 
+-#         .TopView
+-#           .slide
+-#             %span= image_tag @tweet.image.url
+-#             %ul.slide_list
+-#               %li
+-#                 = link_to '削除', tweet_path(@tweet.id), method: :delete
+#main-
+  .container.mt-5
+    .card.mb-3{style: "max-width: 540px;"}
+      .row.g-0
+        .col-md-8
+          %span= image_tag @tweet.image.url
+        .col-md-4
+          .card-body
+            %p.card-text= @tweet.text
+            %p.card-text
+              %small.text-muted Last updated 3 mins ago
+  %span= link_to '削除', tweet_path(@tweet.id), method: :delete
+  %span= link_to '編集', edit_tweet_path(@tweet.id), method: :get
